@@ -14,8 +14,13 @@ public class MyController {
   @ResponseBody
   @RequestMapping("/Hello")
   public String hello() {
+
+    //CALL SERVICE
     String result = myService.hello();
+
+    //RETURN RESULT
     return result;
+
   }
 
 }
